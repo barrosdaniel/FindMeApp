@@ -6,6 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
 .app-body {
   background-image: linear-gradient(#004d40, #00796b);
   height: 100vh;
@@ -24,15 +25,18 @@ body {
   left: 50%;
   transform: translate(-50%, -80%);
   text-align: center;
+  padding: 1rem;
 }
 
 .app-body__icon {
   display: block;
   font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .app-body__heading {
   font-size: 4rem;
+  letter-spacing: 2;
   margin: inherit;
   margin-bottom: 4rem;
 }
@@ -41,6 +45,7 @@ body {
   font-size: 1.5rem;
   margin: inherit;
   margin-bottom: 5rem;
+  padding: 1rem;
 }
 
 .app-body__button:link,
@@ -60,4 +65,55 @@ body {
   background-color: #004d40;
   color: #fafafa;
   border: 1px solid #fafafa;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .app-body__content {
+    width: 100%;
+  }
+
+  .app-body__icon {
+    font-size: 3.5rem;
+  }
+
+  .app-body__heading {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .app-body__text {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+  }
+
+  .app-body__button:link,
+  .app-body__button:visited {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .app-body__icon {
+    font-size: 3rem;
+  }
+
+  .app-body__heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .app-body__text {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .app-body__button:link,
+  .app-body__button:visited {
+    font-size: 1.25rem;
+  }
+
 }
